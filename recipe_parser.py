@@ -2,19 +2,19 @@ import json
 from parser_1 import load_list_from_file, parse_step_main
 
 def load_tools():
-    tools_file = 'src/tools.txt'
+    tools_file = 'tools.txt'
     tools = load_list_from_file(tools_file)
     return tools
 
 def load_ingredients():
-    with open("src/recipe.json", "r") as f:
+    with open("recipe.json", "r") as f:
         data = json.load(f)
 
     ingredients = [item["name"] for item in data["ingredients"]]
     return ingredients
 
 def load_steps():
-    with open("src/recipe.json", "r") as f:
+    with open("recipe.json", "r") as f:
         data = json.load(f)
 
     text = []

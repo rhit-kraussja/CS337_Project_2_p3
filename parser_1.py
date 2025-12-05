@@ -137,7 +137,7 @@ def extract_temperature(step: str, ingredients: List[str]) -> Dict:
 
 def get_ingredient_amounts(ingredients):
     final = []
-    with open("src/recipe.json", "r") as f:
+    with open("recipe.json", "r") as f:
         ingredients_data = json.load(f)["ingredients"]
     for ing_data in ingredients_data:
         if ing_data["name"] in ingredients:

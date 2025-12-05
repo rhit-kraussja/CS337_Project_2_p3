@@ -4,7 +4,7 @@
 
 import speech_recognition as sr
 import pyttsx3 
-from main import *
+from CS337_Project_2_p3.src.gemini.main import *
 
 # Initialize the recognizer 
 r = sr.Recognizer() 

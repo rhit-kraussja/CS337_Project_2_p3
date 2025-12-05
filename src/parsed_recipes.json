@@ -1,0 +1,149 @@
+[
+    {
+        "step_number": 1,
+        "description": "Preheat the oven to 375 degrees F (190 degrees C).",
+        "actions": [
+            {
+                "verb": "preheat",
+                "ingredients": [],
+                "tool": null
+            }
+        ],
+        "time": {},
+        "temperature": {
+            "oven": "375°"
+        },
+        "actionable": true,
+        "notes": [],
+        "ingredients": [],
+        "substep_number": "1.1"
+    },
+    {
+        "step_number": 2,
+        "description": "Lightly grease a 9x13-inch baking dish.",
+        "actions": [
+            {
+                "verb": "bake",
+                "ingredients": [],
+                "tool": null
+            }
+        ],
+        "time": {},
+        "temperature": {
+            "oven": "375°"
+        },
+        "actionable": true,
+        "notes": [],
+        "ingredients": [],
+        "substep_number": "1.2"
+    },
+    {
+        "step_number": 3,
+        "description": "Place chicken, chicken soup, sour cream, cheese, green onions, almonds, bacon, and hot sauce into a large mixing bowl and stir to combine.",
+        "actions": [
+            {
+                "verb": "place",
+                "ingredients": [
+                    "sour cream",
+                    "sliced green onions",
+                    "cream of chicken soup"
+                ],
+                "tool": "mixing bowl"
+            },
+            {
+                "verb": "stir",
+                "ingredients": [
+                    "sour cream",
+                    "sliced green onions",
+                    "cream of chicken soup"
+                ],
+                "tool": "mixing bowl"
+            }
+        ],
+        "time": {},
+        "temperature": {
+            "oven": "375°"
+        },
+        "actionable": true,
+        "notes": [],
+        "ingredients": [
+            {
+                "qty": "1",
+                "unit": "(10.5 ounce) can",
+                "name": "cream of chicken soup"
+            },
+            {
+                "qty": "1",
+                "unit": "cup",
+                "name": "sour cream"
+            },
+            {
+                "qty": "1/2",
+                "unit": "cup",
+                "name": "sliced green onions"
+            }
+        ],
+        "substep_number": "2.1"
+    },
+    {
+        "step_number": 4,
+        "description": "Pour mixture into the prepared dish.",
+        "actions": [
+            {
+                "verb": "pour",
+                "ingredients": [],
+                "tool": null
+            }
+        ],
+        "time": {},
+        "temperature": {
+            "oven": "375°"
+        },
+        "actionable": true,
+        "notes": [],
+        "ingredients": [],
+        "substep_number": "2.2"
+    },
+    {
+        "step_number": 5,
+        "description": "Stir crushed crackers and butter together until combined; spread mixture evenly over casserole.",
+        "actions": [
+            {
+                "verb": "stir",
+                "ingredients": [
+                    "butter"
+                ],
+                "tool": null
+            }
+        ],
+        "time": {},
+        "temperature": {
+            "oven": "375°"
+        },
+        "actionable": true,
+        "notes": [],
+        "ingredients": [],
+        "substep_number": "3.1"
+    },
+    {
+        "step_number": 6,
+        "description": "Bake in the preheated oven until browned and bubbly, 40 to 45 minutes.",
+        "actions": [
+            {
+                "verb": "bake",
+                "ingredients": [],
+                "tool": null
+            }
+        ],
+        "time": {
+            "duration": "45 minutes"
+        },
+        "temperature": {
+            "oven": "375°"
+        },
+        "actionable": true,
+        "notes": [],
+        "ingredients": [],
+        "substep_number": "4.1"
+    }
+]
