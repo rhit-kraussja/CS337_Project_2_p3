@@ -5,7 +5,7 @@ ROLE
 
 KNOWLEDGE
 - Your knowledge will be based on the recipe extracted
-- When given raw text, identify:
+- When given raw text, identify and memorize:
   - Title
   - Ingredients
   - Steps

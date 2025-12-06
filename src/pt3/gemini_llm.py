@@ -4,17 +4,15 @@ import json
 from dotenv import load_dotenv
 from google import genai
 from google.genai.types import Part, UserContent, ModelContent, HttpOptions, GenerateContentConfig
-# Load env variables (API Key)
 load_dotenv()
 
-# Initialize Client (New SDK Style)
-# Ensure GEMINI_API_KEY is in your .env file
+# Initialize Client
+# Ensure GEMINI_API_KEY
 client = genai.Client(
     http_options=HttpOptions(api_version="v1beta"),
 )
 
-# --- Dynamic Path Handling ---
-# This ensures we find the text file regardless of where you run main.py from
+# --- Path Handling ---
 CURRENT_DIR = os.path.dirname(os.path.abspath(__file__))
 PROJECT_ROOT = os.path.abspath(os.path.join(CURRENT_DIR, "..", ".."))
 SYSTEM_PROMPT_PATH = os.path.join(PROJECT_ROOT, "unified_system_prompt.txt")
@@ -45,7 +43,7 @@ def ask_gemini(
     # Logic to match your step_manager structure
     for st in steps:
         if st.get("step_number") == curr_idx:
-            current_step_text = st.get("text") or st.get("description") or ""
+            current_step_text = st.get("text") 
             break
 
     step_context_str = f"User is currently on Step {curr_idx}: {current_step_text}"
@@ -59,7 +57,7 @@ def ask_gemini(
         model="gemini-2.0-flash", 
         config=GenerateContentConfig(
             system_instruction=SYSTEM_PROMPT,
-            temperature=0.7, # Optional: helps keep instructions strict
+            temperature=0.7, # helps keep instructions strict
         ),
         history=[
             UserContent(parts=[Part(text=f"Here is the recipe data I am cooking with:\n{recipe_json_snippet}")]),

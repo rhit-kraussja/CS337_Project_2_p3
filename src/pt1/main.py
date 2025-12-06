@@ -149,10 +149,10 @@ def query_handler(recipe_data):
     3. Delegate to Gemini (AI).
     """
     
-    slow_print("\n----------------------------------------------------")
-    slow_print(" RECIPE ASSISTANT INITIALIZED")
-    slow_print("----------------------------------------------------")
-    slow_print(" Commands: 'next', 'back', 'repeat', 'exit'")
+    # slow_print("\n----------------------------------------------------")
+    # slow_print(" RECIPE ASSISTANT INITIALIZED")
+    # slow_print("----------------------------------------------------")
+    # slow_print(" Commands: 'next', 'back', 'repeat', 'exit'")
     
     idx = 1
     
@@ -188,11 +188,11 @@ def query_handler(recipe_data):
                 curr_idx=idx
             )
             print()
-            word_print("Assistant:", answer)
+            word_print("Sous-chef Larry:", answer)
             
         except Exception as e:
             print(f"\n[System Error]: {e}")
-            slow_print("I'm having trouble connecting to the AI brain.")
+            slow_print("I'm having trouble connecting to my brain.")
 
 def startup_base():
     """Initial setup: URL input, Scraping, Parsing, Display Summary"""
@@ -242,6 +242,7 @@ def main():
     yes_or_no = input(" y/n : ").strip()
     
     if yes_or_no.lower() in ['y', 'yes', 'sure', 'yeah']:
+        slow_print("Great! Let's get started!")
         query_handler(recipe_data)
     elif yes_or_no.lower() in ['n', 'no', 'nah', 'nope']:
         slow_print("Alright! Enjoy your cooking!")
