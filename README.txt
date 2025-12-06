@@ -38,3 +38,53 @@ Components
 - `src/pt1/main.py`: CLI glue that prints recipe, walks steps, handles queries
 - `src/pt3/gemini_llm.py`: small wrapper that sends system+recipe+step+question to Gemini (requires Google GenAI client)
 - Data: `culinary_dictionary.json`, `common_cooking_tools.txt`, `ingredient_substitutions.json`, `tools.txt`
+
+
+## Queries
+
+### Lasagna Recipe
+https://www.allrecipes.com/recipe/218091/classic-and-simple-meat-lasagna/
+
+#### Queries
+- "first step"
+- “back”
+- “next”
+- “Repeat”
+
+**At step1:**
+- "what is the temperature for oven"
+
+**At step 3:**
+- "how much of that?"
+
+**At step 4:**
+- "What can I use instead of pepper?"
+- “What is skillet?”
+- "how much of that"
+
+**At step 5:**
+- "How do I mix?"
+- "How do I do that?"
+- "How many eggs do I need?"
+- "How much of that do I need?"
+
+### Orange Cake Recipe
+https://www.allrecipes.com/recipe/261757/orange-cake-with-semolina-and-almonds/
+
+**At step1:**
+- "What is the temperature for stove/burner?"
+- "What is saucepan?"
+
+**At step2:**
+- "How long was it?"
+
+**At step4:**
+- "What is parchment paper?"
+
+**At step8:**
+- "How long was it?"
+
+**At step10:**
+- "How do I do that?"
+- "How much of them?"
+- "How many ground almonds?"
